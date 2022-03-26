@@ -1,0 +1,134 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Images/Contact.jpg');
+    background-size: cover;
+    height: 670px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    top: 0%;
+    width: 85%;
+    height: 3%;
+    z-index: 2;
+    margin: auto;
+    padding: 35px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+    height: 69px;
+    cursor: pointer;
+    opacity: 0.8;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.navbar ul {
+    background: black;
+    padding: 10px;
+    opacity: 0.8;
+    border-radius: 20px;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    font-size: large;
+    font-weight: bold;
+    color: rgb(150, 150, 150);
+    text-transform: uppercase;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0px;
+    background: #009688;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+/* Contact */
+
+.topics {
+    position: relative;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+}
+
+.underline {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 2px;
+    background-color: white;
+}
+
+.contact {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45%;
+    height: 440px;
+}
+
+.contact .contact-box {
+    position: relative;
+    height: 100px;
+    margin: 8px 0px;
+    background-color: white;
+    opacity: 0.75;
+}
+
+.contact .contact-box .contact-icon {
+    position: relative;
+    width: 75px;
+    height: 75%;
+    top: 12px;
+    left: 15px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.contact .contact-box .contact-icon .fa {
+    font-size: 30px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.contact .contact-box .contact-details {
+    position: absolute;
+    left: 20%;
+    top: 15px;
+}

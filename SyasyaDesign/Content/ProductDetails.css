@@ -1,0 +1,194 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Muli:400,700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    top: 0%;
+    width: 85%;
+    height: 3%;
+    z-index: 2;
+    margin: auto;
+    padding: 35px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+    height: 69px;
+    cursor: pointer;
+    opacity: 0.8;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.navbar ul {
+    background: black;
+    padding: 10px;
+    opacity: 0.8;
+    border-radius: 20px;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    font-size: large;
+    font-weight: bold;
+    color: rgb(150, 150, 150);
+    text-transform: uppercase;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0px;
+    background: #009688;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+/* Product Details */
+
+.content {
+    height: 1500px;
+}
+
+.rowContainer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin: 50px 0px;
+}
+
+.apparel {
+    position: relative;
+    width: 30%;
+    height: 380px;
+    background-color: #000;
+    float: left;
+    margin: 0px 1.6667%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.apparel .picture {
+    cursor: zoom-in;
+}
+
+.apparel .picture img {
+    position: absolute;
+    width: 50%;
+    height: 75%;
+    left: 0px;
+    top: 0px;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+ }
+
+.apparel .picture:hover img {
+    transition: 1s;
+    width: 85%;
+    height: 85%;
+    transform: translate(-20%, -3%);
+    position: center;
+}
+
+.apparel .details {
+    position: absolute;
+    width: 50%;
+    height: 75%;
+    right: 0px;
+    top: 0px;
+    color: black;
+    background-color: white;
+    padding: 5px;
+}
+
+.apparel .options {
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    bottom: 0px;
+    background-color: black;
+    border-top: 1.5px solid black;
+}
+
+.apparel .options .decision {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    left: 0px;
+    background-color: white;
+}
+
+.apparel .options .decision label {
+    padding: 0px 15px;
+}
+
+.apparel .options .decision select {
+    width: 55%;
+    padding: 7px 13px;
+    margin: 7px 7px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.apparel .options .addcart {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    right: 0px;
+}
+
+.apparel .options .addcart .btnaddcart {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 20px;
+}
+
+.apparel .options .addcart .btnaddcart:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    transition: 0.4s;
+}

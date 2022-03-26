@@ -1,0 +1,183 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Muli:400,700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Images/Prod_Bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    top: 0%;
+    width: 85%;
+    height: 3%;
+    z-index: 2;
+    margin: auto;
+    padding: 35px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+    height: 69px;
+    cursor: pointer;
+    opacity: 0.8;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.navbar ul {
+    background: black;
+    padding: 10px;
+    opacity: 0.8;
+    border-radius: 20px;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    font-size: large;
+    font-weight: bold;
+    color: rgb(150, 150, 150);
+    text-transform: uppercase;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0px;
+    background: #009688;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+/* Products */
+
+.themeContainer {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: 120px 0px;
+}
+
+.themeContainer .apparel {
+    position: relative;
+    width: 23%;
+    height: 270px;
+    background-color: #000;
+    float: left;
+    margin: 15px 5.1667%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+.themeContainer .apparel .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f00;
+    transition: 0.5s;
+    z-index: 1;
+    background-position: center;
+    background-size: cover;
+}
+
+.themeContainer .apparel:hover .icon {
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.themeContainer .apparel .icon .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.themeContainer .apparel:hover .icon .fa {
+    font-size: 40px;
+}
+
+.themeContainer .apparel .content {
+    position: absolute;
+    top: 100%;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.themeContainer .apparel:hover .content {
+    top: 90px;
+    opacity: 1;
+}
+
+.themeContainer .apparel .content a {
+    text-decoration: none;
+    margin: 0 0 10px;
+    padding: 0;
+    color: black;
+}
+
+.themeContainer .apparel .content p {
+    margin: 15px;
+    padding: 0;
+    color: black;
+    font-weight: bold;
+}
+
+.themeContainer .apparel:nth-child(2) .icon {
+    background-image: url("Images/Dresses/Dresses(1).jpg");
+}
+.themeContainer .apparel:nth-child(2) {
+    background-image: url("Images/Dresses/Dresses(2).jpg");
+}
+.themeContainer .apparel:nth-child(3) .icon {
+    background-image: url("Images/Jeans/Jeans(1).jpg");
+}
+.themeContainer .apparel:nth-child(3) {
+    background-image: url("Images/Jeans/Jeans(2).jpg");
+}
+.themeContainer .apparel:nth-child(4) .icon {
+    background-image: url("Images/Tops/Tops(1).jpg");
+}
+.themeContainer .apparel:nth-child(4) {
+    background-image: url("Images/Tops/Tops(2).jpg");
+}

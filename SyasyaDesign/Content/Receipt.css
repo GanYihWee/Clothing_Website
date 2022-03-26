@@ -1,0 +1,124 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.receipt-bg {
+    position: absolute;
+    width: 1280px;
+    height: 577px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('Images/Receipt.jpg');
+    background-size: cover;
+    filter: blur(10px);
+    z-index: 0;
+}
+
+.receipt {
+    position: absolute;
+    width: 1280px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    filter: none;
+    z-index: 5;
+}
+
+.receipt .success-icon {
+    position: relative;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
+    color: #ffd300;
+    background-color: transparent;
+}
+
+.receipt .success-icon .fa {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.receipt .success-text {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: #ffd300;
+}
+
+.receipt .receipt-labels {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 50%;
+    height: 367px;
+}
+
+.receipt .receipt-labels dl {
+    text-align: right;
+}
+
+.receipt .receipt-labels dl dt {
+    padding: 20px 20px 0px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.receipt .receipt-details {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 50%;
+    height: 367px;
+}
+
+.receipt .receipt-details dl {
+    text-align: left;
+}
+
+.receipt .receipt-details dl dt {
+    padding: 20px 20px 0px;
+    font-size: larger;
+}
+
+.home {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    bottom: 30px;
+    left: 30px;
+    z-index: 10;
+}
+
+.home button {
+    width: 100%;
+    background-color: transparent;
+    border: 3px solid transparent;
+    color: #fff;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.35s ease;
+}
+
+.home button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: #ffd300;
+    border: 3px solid #ffd300;
+}
